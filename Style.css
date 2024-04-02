@@ -1,9 +1,115 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+body {
+    background-color: #424242;
+}
+.slider-box {
+    width: 1000px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+.slider-box ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+.slider-box li {
+   width: 100%;
+   list-style: none;
+   position: relative; 
+}
+.texto {
+    position: absolute;
+    text-align: center;
+    padding: 0 250px;
+    top: 250px;
+    color: blue;
+}
+.texto h2{
+    font-size: 85;
+    margin-bottom: 35px;
+}
+.p2 {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+.slider-box img {
+    width: 100%;
 }
 
 .logo {
     align-items: center;
     text-align: center;
+}
+.imglogo {
+    width: 300px;
+    margin-top: 70px;
+}
+.contenedor {
+    align-items: center;
+    text-align: center;
+}
+.hambu {
+    width: 400px;
+    /*transition: transform 1s linear;*/
+    animation: movimiento 3s infinite alternate linear;
+}
+
+
+h3 {
+    color: orange;
+    font-size: 23px;
+    padding: 10px;
+}
+p {
+    color: #ffffff;
+    font-size: 20px;
+    margin: auto;
+    padding: 10px;
+
+}
+.precio {
+    color: red;
+    background-color: beige;
+    width: 80px;
+    margin: auto;
+    font-size: 25px;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.titulo {
+    text-align: center;
+}
+.enlace {
+   margin: 50px;
+}
+.enlace2 {
+    text-decoration: none;
+    color: lightcoral;
+    font-size: 20px;
+}
+@keyframes movimiento {
+    from {
+        transform: translateX(-300px);
+    }
+    to {
+        transform: translateX(300px);
+    }
+}
+@keyframes slide {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
 }
