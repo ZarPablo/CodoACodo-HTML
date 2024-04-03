@@ -95,6 +95,12 @@ p {
     color: lightcoral;
     font-size: 20px;
 }
+footer {
+    height: 50px;
+    background-color: aqua;
+    margin: 10px;
+    padding: 10px;
+}
 @keyframes movimiento {
     from {
         transform: translateX(-300px);
