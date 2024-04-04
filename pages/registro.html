@@ -29,9 +29,49 @@
         </ul>
        </nav>
    </header>
-    <h2>Pagina de registro</h2>
+    <h2>Registrate para disfrutar de un buen sandwich</h2>
     <main>
-
+        <section>
+            <form action="#" method="post">
+                <div>
+                    <label for="nombreregi">Nombre</label>
+                    <input type="text" id="nombreregi" placeholder="Juan" name="nombrere">
+                </div>
+                <div>
+                    <label for="apellidoregi">Apellido</label>
+                    <input type="text" id="apellidoregi" placeholder="Perez" name="apellidore">
+                </div>
+                <div>
+                    <label for="emailregi">Email</label>
+                    <input type="email" id="emailregi" placeholder="juanperez@mail.com" name="emailre">
+                </div>
+                <div>
+                    <label for="passregi">Contraseña</label>
+                    <input type="password" id="passregi" name="passwordre" minlength="8">
+                </div>
+                <div>
+                    <label for="fecharegi">fecha de nacimiento</label>
+                    <input type="date" id="fecharegi" name="fechare">
+                </div>
+                <!--
+                <div>
+                    <label for="paisregi">Pais de residencia</label>
+                    <select name="paisre" id="paisregi">
+                        <option value="nn" selected>Seleccione un Pais</option>
+                        <option value="AR">Argentina</option>
+                        <option value="BR">Brasil</option>
+                        <option value="CH">Chile</option>
+                        <option value="UR">Uruguay</option>
+                    </select>
+                </div>                  
+                -->
+                <div>
+                    <input type="checkbox" id="terminos" name="terminosycondi" value="1">
+                    <label for="terminos" >Acepto términos y condiciones</label>
+                </div>
+                <input type="submit" value="Registrarse" id="btnregistro">
+            </form>
+        </section>
     </main>
     <footer>
         <a href="pages/terminos.html" target="_blank">Terminos y condiciones</a>
