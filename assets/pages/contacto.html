@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/styleform.css">
     <title>San Guis - Contacto</title>
     <link rel="shortcut icon" href="../img/favicon.ico">
 </head>
@@ -30,10 +30,30 @@
        </nav>
    </header>
    <main>
-    <h2 class="tituconta">Comunicate con nosotros</h2>
-    <section>
-        
-    </section>
+    
+        <section class="formulario">
+            <h4 class="tituconta">Comunicate con nosotros</h4>
+            <form action="#" method="post">
+                <div>
+                    <label for="nombreregi">Nombre</label>
+                    <input class="formu" type="text" id="nombreregi" placeholder="Juan" name="nombrere">
+                </div>
+                <div>
+                    <label for="apellidoregi">Apellido</label>
+                    <input class="formu" type="text" id="apellidoregi" placeholder="Perez" name="apellidore">
+                </div>
+                <div>
+                    <label for="emailregi">Email</label>
+                    <input class="formu" type="email" id="emailregi" placeholder="juanperez@mail.com" name="emailre">
+                </div>
+                
+                <div>
+                    <label for="textarearegi">Mensaje</label>
+                    <textarea class="formu" name="textareare" id="textarearegi" cols="30" rows="5">Escriba su mensaje aqui</textarea>
+                </div>
+                <input type="submit" value="Enviar" class="btnregistro">
+            </form>
+        </section>
     <section id="ubicacion">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1698.457936922325!2d-60.702221534069814!3d-31.636153677615628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1712158652546!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>

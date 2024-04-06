@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/styleform.css">
     <title>San Guis - Registro</title>
     <link rel="shortcut icon" href="../img/favicon.ico">
 </head>
@@ -29,29 +29,30 @@
         </ul>
        </nav>
    </header>
-    <h2>Registrate para disfrutar de un buen sandwich</h2>
+    
     <main>
-        <section>
+        <section class="formulario">
+            <h4>Registrate para disfrutar de un buen sandwich</h4>
             <form action="#" method="post">
                 <div>
                     <label for="nombreregi">Nombre</label>
-                    <input type="text" id="nombreregi" placeholder="Juan" name="nombrere">
+                    <input class="formu" type="text" id="nombreregi" placeholder="Juan" name="nombrere">
                 </div>
                 <div>
                     <label for="apellidoregi">Apellido</label>
-                    <input type="text" id="apellidoregi" placeholder="Perez" name="apellidore">
+                    <input class="formu" type="text" id="apellidoregi" placeholder="Perez" name="apellidore">
                 </div>
                 <div>
                     <label for="emailregi">Email</label>
-                    <input type="email" id="emailregi" placeholder="juanperez@mail.com" name="emailre">
+                    <input class="formu" type="email" id="emailregi" placeholder="juanperez@mail.com" name="emailre">
                 </div>
                 <div>
                     <label for="passregi">Contraseña</label>
-                    <input type="password" id="passregi" name="passwordre" minlength="8">
+                    <input class="formu" type="password" id="passregi" name="passwordre" minlength="8">
                 </div>
                 <div>
                     <label for="fecharegi">fecha de nacimiento</label>
-                    <input type="date" id="fecharegi" name="fechare">
+                    <input class="formu" type="date" id="fecharegi" name="fechare">
                 </div>
                 <!--
                 <div>
@@ -69,7 +70,7 @@
                     <input type="checkbox" id="terminos" name="terminosycondi" value="1">
                     <label for="terminos" >Acepto términos y condiciones</label>
                 </div>
-                <input type="submit" value="Registrarse" id="btnregistro">
+                <input type="submit" value="Registrarse" class="btnregistro">
             </form>
         </section>
     </main>

@@ -4,43 +4,11 @@
     padding: 0;
 }
 body {
-    background-color: #424242;
-}
-.slider-box {
-    width: 1000px;
-    height: auto;
-    margin: 50px auto 0;
-    overflow: hidden;
-}
-.slider-box ul {
-    display: flex;
-    padding: 0;
-    width: 400%;
-    animation: slide 20s infinite alternate ease-in-out;
-}
-.slider-box li {
-   width: 100%;
-   list-style: none;
-   position: relative; 
-}
-.texto {
-    position: absolute;
-    text-align: center;
-    padding: 0 250px;
-    top: 250px;
-    color: blue;
-}
-.texto h2{
-    font-size: 85px;
-    margin-bottom: 35px;
-}
-.p2 {
-    color: black;
-    font-size: 30px;
-    font-weight: bold;
-}
-.slider-box img {
-    width: 100%;
+    background-image: url(../img/san1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 .logo {
@@ -94,6 +62,64 @@ p {
     text-decoration: none;
     color: lightcoral;
     font-size: 20px;
+}
+footer {
+    height: 50px;
+    background-color: aqua;
+    margin: 10px;
+    padding: 10px;
+}
+
+h2 {
+    text-align: center;
+    align-content: center;
+}
+.formulario h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+.formu {
+    width: 100%;
+    background-color: grey;
+    padding: 7px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    border: 2px solid blue;
+    font-size: 16px;
+}
+
+.formulario {
+   width: 500px;
+   background: #000000;
+    padding: 30px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    color: #ffffff;
+}
+#ubicacion {
+    align-items: center;
+ text-align: center;
+}
+.btnregistro {
+    color: #ffffff;
+    background-color: blue;
+    width: 150px;
+    height: 40px;
+    border-radius: 5%;
+    width: 100%;
+    padding: 10px;
+    margin: 16px 0;
+    font-size: 18px;
+
+}
+#btnregistro:hover {
+color: blue;
+font-weight: bold;
+background-color: white;
 }
 @keyframes movimiento {
     from {

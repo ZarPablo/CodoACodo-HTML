@@ -4,10 +4,16 @@
     padding: 0;
 }
 body {
-    background-color: #424242;
+    background-color: #ffffff;
+}
+.titulo3 {
+    text-align: center;
+    padding: auto;
+    margin-top: 30px;
+    font-size: 48px;
 }
 .slider-box {
-    width: 1000px;
+    width: 100%;
     height: auto;
     margin: 50px auto 0;
     overflow: hidden;
@@ -15,8 +21,11 @@ body {
 .slider-box ul {
     display: flex;
     padding: 0;
-    width: 400%;
-    animation: slide 20s infinite alternate ease-in-out;
+    width: 800%;
+    animation: slide 40s infinite alternate linear;
+}
+.slider-box img {
+    width: 30%;
 }
 .slider-box li {
    width: 100%;
@@ -60,6 +69,11 @@ body {
     /*transition: transform 1s linear;*/
     animation: movimiento 3s infinite alternate linear;
 }
+.tarjeta {
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+}
 
 
 h3 {
@@ -101,6 +115,58 @@ footer {
     margin: 10px;
     padding: 10px;
 }
+
+h2 {
+    text-align: center;
+    align-content: center;
+}
+.formulario h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+.formu {
+    width: 100%;
+    background-color: grey;
+    padding: 7px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    border: 2px solid blue;
+    font-size: 16px;
+}
+
+.formulario {
+   width: 500px;
+   background: #000000;
+    padding: 30px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    color: #ffffff;
+}
+#ubicacion {
+    align-items: center;
+ text-align: center;
+}
+.btnregistro {
+    color: #ffffff;
+    background-color: blue;
+    width: 150px;
+    height: 40px;
+    border-radius: 5%;
+    width: 100%;
+    padding: 10px;
+    margin: 16px 0;
+    font-size: 18px;
+
+}
+#btnregistro:hover {
+color: blue;
+font-weight: bold;
+background-color: white;
+}
 @keyframes movimiento {
     from {
         transform: translateX(-300px);
@@ -111,11 +177,19 @@ footer {
 }
 @keyframes slide {
     0% {margin-left: 0;}
-    20% {margin-left: 0;}
+    12% {margin-left: 0;}
+    13% {margin-left: -100%;}
     25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
-    50% {margin-left: -200%;}
-    70% {margin-left: -200%;}
-    75% {margin-left: -300%;}
-    100% {margin-left: -300%;}
+    26% {margin-left: -200%;}
+    37% {margin-left: -200%;}
+    38% {margin-left: -300%;}
+    50% {margin-left: -300%;}
+    51% {margin-left: -400%;}
+    63% {margin-left: -400%;}
+    64% {margin-left: -500%;}
+    75% {margin-left: -500%;}
+    76% {margin-left: -600%;}
+    88% {margin-left: -600%;}
+    89% {margin-left: -700%;}
+    100% {margin-left: -700%;}
 }
