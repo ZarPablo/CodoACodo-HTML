@@ -5,6 +5,7 @@
 }
 body {
     background-color: #f0f0f0;
+    margin: 20px;
 }
 .titulo3 {
     text-align: center;
@@ -94,7 +95,9 @@ body {
 .slider .slide img {
    width: 100%; 
 }
-
+.coment {
+    color: #000000;
+}
 .contenedor-pedidos {
     display: flex;
     justify-content: center;
@@ -173,6 +176,10 @@ footer {
     background-color: aqua;
     margin: 10px;
     padding: 10px;
+}
+.enlace {
+    text-decoration: none;
+    display: flex;
 }
 
 h2 {
