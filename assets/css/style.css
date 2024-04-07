@@ -1,36 +1,16 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 body {
-    background-color: #ffffff;
+    background-color: #f0f0f0;
 }
 .titulo3 {
     text-align: center;
     padding: auto;
     margin-top: 30px;
     font-size: 48px;
-}
-.slider-box {
-    width: 100%;
-    height: auto;
-    margin: 50px auto 0;
-    overflow: hidden;
-}
-.slider-box ul {
-    display: flex;
-    padding: 0;
-    width: 800%;
-    animation: slide 40s infinite alternate linear;
-}
-.slider-box img {
-    width: 30%;
-}
-.slider-box li {
-   width: 100%;
-   list-style: none;
-   position: relative; 
 }
 .texto {
     position: absolute;
@@ -48,10 +28,6 @@ body {
     font-size: 30px;
     font-weight: bold;
 }
-.slider-box img {
-    width: 100%;
-}
-
 .logo {
     align-items: center;
     text-align: center;
@@ -69,13 +45,66 @@ body {
     /*transition: transform 1s linear;*/
     animation: movimiento 3s infinite alternate linear;
 }
-.tarjeta {
-    width: 30%;
+
+.slider {
+    width: 100vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+.slider .slide2 {
     display: flex;
-    flex-wrap: wrap;
+    animation: calesita 40s linear infinite;
+    -webkit-animation: calesita 40s linear infinite;
+    width: calc(200px * 18);
+}
+.slider .slide {
+    width: 200px;
+}
+.slider .slide img {
+   width: 100%; 
 }
 
+.contenedor-pedidos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
 
+.tarjeta-pedidos {
+    width: 325px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+}
+.tarjeta-pedidos img {
+    width: 100%;
+    height: auto;
+}
+.contenido-tarjeta {
+    padding: 16px;
+}
+.contenido-tarjeta h4 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+.contenido-tarjeta p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.3;
+}
+.contenido-tarjeta .boton {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: blue;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    color: #ffffff;
+}
 h3 {
     color: orange;
     font-size: 23px;
@@ -120,53 +149,6 @@ h2 {
     text-align: center;
     align-content: center;
 }
-.formulario h4 {
-    font-size: 20px;
-    margin-bottom: 20px;
-
-}
-.formu {
-    width: 100%;
-    background-color: grey;
-    padding: 7px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    color: #ffffff;
-    border: 2px solid blue;
-    font-size: 16px;
-}
-
-.formulario {
-   width: 500px;
-   background: #000000;
-    padding: 30px;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border-radius: 5px;
-    color: #ffffff;
-}
-#ubicacion {
-    align-items: center;
- text-align: center;
-}
-.btnregistro {
-    color: #ffffff;
-    background-color: blue;
-    width: 150px;
-    height: 40px;
-    border-radius: 5%;
-    width: 100%;
-    padding: 10px;
-    margin: 16px 0;
-    font-size: 18px;
-
-}
-#btnregistro:hover {
-color: blue;
-font-weight: bold;
-background-color: white;
-}
 @keyframes movimiento {
     from {
         transform: translateX(-300px);
@@ -175,21 +157,13 @@ background-color: white;
         transform: translateX(300px);
     }
 }
-@keyframes slide {
-    0% {margin-left: 0;}
-    12% {margin-left: 0;}
-    13% {margin-left: -100%;}
-    25% {margin-left: -100%;}
-    26% {margin-left: -200%;}
-    37% {margin-left: -200%;}
-    38% {margin-left: -300%;}
-    50% {margin-left: -300%;}
-    51% {margin-left: -400%;}
-    63% {margin-left: -400%;}
-    64% {margin-left: -500%;}
-    75% {margin-left: -500%;}
-    76% {margin-left: -600%;}
-    88% {margin-left: -600%;}
-    89% {margin-left: -700%;}
-    100% {margin-left: -700%;}
+@keyframes calesita {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-200px * 9));
+        transform: translateX(calc(-200px * 9));
+    }
 }
