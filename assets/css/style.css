@@ -163,6 +163,9 @@ p {
 .titulo {
     text-align: center;
 }
+.titulo2 {
+    color: #000000;
+}
 .enlace {
    margin: 50px;
 }
