@@ -6,12 +6,74 @@
 body {
     background-color: #f0f0f0;
     margin: 20px;
+    font-family: "Poppins", sans-serif;
+    overflow: auto;
+}
+header {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    z-index: 3;
+}
+nav {
+    height: 10vh;
+    background-color: #85C1E9 ;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    align-items: center;
+}
+.navul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+.navul li a {
+    text-decoration: none;
+    color: inherit;
+}
+.navul li a:hover {
+    color: #ffffff;
+}
+#tendencias {
+    height: 90vh;
+    background-image: url(../img/2147701348.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+span {
+    font-size: 32px;
 }
 .titulo3 {
     text-align: center;
-    padding: auto;
-    margin-top: 30px;
+    position: relative;
+    margin: auto;
     font-size: 48px;
+    color: #000000;
+    border: solid 5px;
+    background-color: #FCF3CF;
+    align-items: center;
+    border-radius: 8px;
+    width: 1000px;
+}
+.loguin {
+    background-color: #3498DB;
+    padding: 10px;
+    border-radius: 15px;
+}
+.loguin:hover {
+    background-color: #34495E;
+    color: #ffffff; 
+}
+.regis {
+    background-color: #28B463;
+    padding: 10px;
+    border-radius: 15px;
+}
+.regis:hover {
+    background-color: #34495E;
+    color: #ffffff; 
 }
 .texto {
     position: absolute;
@@ -176,13 +238,34 @@ p {
 }
 footer {
     height: 50px;
-    background-color: aqua;
+    background-color: #85C1E9;
     margin: 10px;
     padding: 10px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+footer a {
+    text-decoration: none;
+}
+footer a:hover {
+    color: #ffffff;
+}
+i {
+    font-size: 40px;
 }
 .enlace {
     text-decoration: none;
     display: flex;
+}
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
+}
+.recul {
+    list-style: none;
 }
 
 h2 {
