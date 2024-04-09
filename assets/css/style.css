@@ -36,11 +36,10 @@ nav {
     color: #ffffff;
 }
 #tendencias {
-    height: 90vh;
     background-image: url(../img/2147701348.jpg);
     background-size: cover;
     background-position: center;
-    padding: 30px;
+    padding: 5px;
 }
 span {
     font-size: 32px;
@@ -164,7 +163,7 @@ span {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 100px;
+    margin-top: 10px;
 }
 
 .tarjeta-pedidos {
@@ -173,14 +172,14 @@ span {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-    margin: 20px;
+    margin: 10px;
 }
 .tarjeta-pedidos img {
     width: 100%;
     height: auto;
 }
 .contenido-tarjeta {
-    padding: 16px;
+    padding: 6px;
 }
 .contenido-tarjeta h4 {
     font-size: 28px;
@@ -244,6 +243,8 @@ footer {
     display: flex;
     gap: 30px;
     justify-content: center;
+
+
 }
 footer a {
     text-decoration: none;
