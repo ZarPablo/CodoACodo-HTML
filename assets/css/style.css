@@ -44,6 +44,27 @@ nav {
 span {
     font-size: 32px;
 }
+.btnwat {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: rgba(35, 155, 87, 0.842);
+    color: #ffffff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    align-items: center;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index: 10;
+}
+.btnwat:hover {
+    text-decoration: none;
+    background: #ffffff;
+    color:rgb(35,155,87);
+}
 .titulo3 {
     text-align: center;
     position: relative;
