@@ -38,25 +38,27 @@
     </container>     
         <section class="formulario">
             <h4 class="tituconta">Comunicate con nosotros</h4>
-            <form action="#" method="post">
+            <form action="https://formsubmit.co/51ddfc17cd94bd9f87e54a2686dddf37" method="POST">
                 <div>
                     <label for="nombreregi">Nombre</label>
-                    <input class="formu" type="text" id="nombreregi" placeholder="Juan" name="nombrere">
+                    <input class="formu" type="text" id="nombreregi" placeholder="Juan" name="nombre">
                 </div>
                 <div>
                     <label for="apellidoregi">Apellido</label>
-                    <input class="formu" type="text" id="apellidoregi" placeholder="Perez" name="apellidore">
+                    <input class="formu" type="text" id="apellidoregi" placeholder="Perez" name="apellido">
                 </div>
                 <div>
                     <label for="emailregi">Email</label>
-                    <input class="formu" type="email" id="emailregi" placeholder="juanperez@mail.com" name="emailre">
+                    <input class="formu" type="email" id="emailregi" placeholder="juanperez@mail.com" name="email">
                 </div>
                 
                 <div>
                     <label for="textarearegi">Mensaje</label>
-                    <textarea class="formu" name="textareare" id="textarearegi" cols="30" rows="5">Escriba su mensaje aqui</textarea>
+                    <textarea class="formu" name="Mensaje" id="textarearegi" cols="30" rows="5">Escriba su mensaje aqui</textarea>
                 </div>
                 <input type="submit" value="Enviar" class="btnregistro">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://sanguis.netlify.app/">
             </form>
         </section>
     <section id="ubicacion">
