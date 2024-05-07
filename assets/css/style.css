@@ -110,7 +110,7 @@ span {
     background-color: #FCF3CF;
     align-items: center;
     border-radius: 8px;
-    width: 1000px;
+    width: 100vw;
 }
 .loguin {
     background-color: #3498DB;
@@ -337,5 +337,61 @@ h2 {
     100% {
         -webkit-transform: translateX(calc(-200px * 9));
         transform: translateX(calc(-200px * 9));
+    }
+}
+@media screen and (max-width:1079px) {
+    nav {
+        height: 8vh;       
+        padding: 0 20px;
+    }
+    .navul {
+        gap: 10px;
+    }
+    span {
+        font-size: 20px;
+    }
+
+}
+@media screen and (max-width:849px) {
+    main {
+        width: 100vw;
+    }
+    body {
+        margin: 20px;
+        width: 100vw;
+    }
+    nav {
+        padding: 0px;
+    }
+    span {
+        font-size: 20px;
+    }
+   
+}
+@media screen and (max-width:777px) {
+    body {
+        margin: 3px;
+    }
+    .navul {
+        gap: 3px;
+    }
+    span {
+        font-size: 15px;
+    }
+    .titulo3 {   
+        font-size:24px;
+        width: 100vw;
+    }
+    li {
+        font-size: .75rem;
+    }
+}
+@media screen and (max-width:577px) {
+    nav {
+        height: 6vh;       
+        padding: 0px;
+    }
+    li {
+        font-size: .5rem;
     }
 }
