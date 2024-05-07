@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styleform.css">
     <title>San Guis - Login</title>
     <script src="https://kit.fontawesome.com/09388ef7d6.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../img/favicon.ico">
@@ -23,7 +23,6 @@
             <li><a href="../../index.html">Inicio</a></li>
             <li><a href="./recursos.html" target="_blank">Recursos</a></li>
             <li><a href="./contacto.html">Contacto</a></li>
-            <li><a class="regis" href="./registro.html" target="_blank">Registrarse</a></li>
         </ul>
        </nav>
    </header>
@@ -37,7 +36,25 @@
             </div>
             <a href="https://wa.me/2996003586" class="btnwat" target="_blank"><i class="fa-brands fa-whatsapp fa-shake"></i></a> 
         </container> 
-        <h2>Inicio de sesion</h2>
+        <h2 class="inises">Iniciar de sesión</h2>
+        <div class="sesi">
+            <form action="" method="post" id="sesion">
+            <div>
+                <label for="emailregi">Correo Electronico</label>
+                <input class="formu" type="email" id="emailse" name="emailse" autofocus required>
+            </div>
+            <div>
+                <label for="passregi">Contraseña</label>
+                <input class="formu" type="password" id="passe" name="clavese" minlength="8" required>
+            </div>
+
+            <button type="submit" class="btnlog">Ingresar</button>
+            </form>
+            <div class="btnre">
+                <a class="regist" href="./registro.html">Registro</a>
+            </div>   
+        </div>
+        
     </main>
     <footer>
         <a href="../pages/terminos.html">Terminos y condiciones</a>

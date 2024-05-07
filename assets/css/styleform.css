@@ -166,8 +166,72 @@ h2 {
     border: 2px solid blue;
     font-size: 16px;
 }
+.inises {
+    color: #0f0;
+    padding-bottom: 20px;
+    font-size: 2rem;
+}
+.sesi {
+    background-color: rgba(40, 180, 98, 0.205);
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #0f0;
+    box-shadow: 0 0 10px #0f0, inset 0 0 10px #0f0;
+    color: #0f0;
+    flex-direction: column;
+}
 input::placeholder {
     color:#f5f5f5;
+}
+.regist {
+    text-decoration: none;
+    margin-top: 50px;
+    color: #0f0;
+    
+}
+.regist:hover {
+    color: #000000;
+   
+}
+.btnre {
+    width: 5rem;
+    border: 2px solid #0f0;
+    border-radius: 25px;
+    margin-top: 50px;
+}
+.btnre:hover {
+    background-color: #0f0;
+}
+#emailse {
+    border: 1px solid #0f0;
+    box-shadow: 0 0 10px #0f0, inset 0 0 10px #0f0;
+    border-radius: 25px;
+}
+#passe {
+    border: 1px solid #0f0;
+    box-shadow: 0 0 10px #0f0, inset 0 0 10px #0f0;
+    border-radius: 25px;
+}
+.btnlog {
+    color: #000000;
+    background-color: #0f0;
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    width: 100%;
+    padding: 10px;
+    margin: 16px 0;
+    border: 2px solid #0f0;
+    font-size: 18px;
+}
+.btnlog:hover {
+    color: #0f0;
+    background-color: #000000;
 }
 .alerta {
     width: 200px;
