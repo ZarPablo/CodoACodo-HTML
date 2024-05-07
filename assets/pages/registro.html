@@ -39,44 +39,32 @@
         </container>  
         <section class="formulario">
             <h4>Registrate para disfrutar de un buen sandwich</h4>
-            <form action="#" method="post">
+            <form action="#" method="post" id="form">
                 <div>
                     <label for="nombreregi">Nombre</label>
-                    <input class="formu" type="text" id="nombreregi" placeholder="Juan" name="nombrere">
+                    <input class="formu" type="text" id="nombreregi" placeholder="Juan" name="nombrere" required>
                 </div>
                 <div>
                     <label for="apellidoregi">Apellido</label>
-                    <input class="formu" type="text" id="apellidoregi" placeholder="Perez" name="apellidore">
+                    <input class="formu" type="text" id="apellidoregi" placeholder="Perez" name="apellidore" required>
                 </div>
                 <div>
                     <label for="emailregi">Email</label>
-                    <input class="formu" type="email" id="emailregi" placeholder="juanperez@mail.com" name="emailre">
+                    <input class="formu" type="email" id="emailregi" placeholder="juanperez@mail.com" name="emailre" required>
                 </div>
                 <div>
                     <label for="passregi">Contraseña</label>
-                    <input class="formu" type="password" id="passregi" name="passwordre" minlength="8">
+                    <input class="formu" type="password" id="passregi" placeholder="Mayor a 8 caracteres" name="passwordre" minlength="8" required>
                 </div>
                 <div>
                     <label for="fecharegi">fecha de nacimiento</label>
-                    <input class="formu" type="date" id="fecharegi" name="fechare">
+                    <input class="formu" type="date" id="fecharegi" name="fechare" required>
                 </div>
-                <!--
                 <div>
-                    <label for="paisregi">Pais de residencia</label>
-                    <select name="paisre" id="paisregi">
-                        <option value="nn" selected>Seleccione un Pais</option>
-                        <option value="AR">Argentina</option>
-                        <option value="BR">Brasil</option>
-                        <option value="CH">Chile</option>
-                        <option value="UR">Uruguay</option>
-                    </select>
-                </div>                  
-                -->
-                <div>
-                    <input type="checkbox" id="terminos" name="terminosycondi" value="1">
+                    <input type="checkbox" id="terminos" name="terminosycondi" value="1" required>
                     <label for="terminos" >Acepto términos y condiciones</label>
                 </div>
-                <input type="submit" value="Registrarse" class="btnregistro">
+                <button type="submit" class="btnregistro">Registrar</button>
             </form>
         </section>
     </main>
@@ -85,5 +73,6 @@
     <a href="../pages/preguntas.html">Preguntas frecuentes</a>
     <a href="../pages/ayuda.html">Ayuda</a>
     </footer>
+    <script src="../js/registro.js"></script>
 </body>
 </html>

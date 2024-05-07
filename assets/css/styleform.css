@@ -166,7 +166,16 @@ h2 {
     border: 2px solid blue;
     font-size: 16px;
 }
-
+input::placeholder {
+    color:#f5f5f5;
+}
+.alerta {
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #b06ab3;
+    padding-top: 20px;
+}
 .formulario {
    width: 500px;
    background: #000000;
