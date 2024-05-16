@@ -328,8 +328,13 @@ h2 {
     text-align: center;
     align-content: center;
 }
-.grupo {
-    font-size: .5rem;
+.punta {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.punta li {
+    list-style: none;
 }
 @keyframes calesita {
     0% {
