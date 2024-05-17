@@ -365,9 +365,10 @@ h2 {
     }
     body {
         margin: 20px;
-        width: 100vw;
+        width: 90vw;
     }
     nav {
+        width: 90vw;
         padding: 0px;
     }
     span {
@@ -376,9 +377,6 @@ h2 {
    
 }
 @media screen and (max-width:777px) {
-    body {
-        margin: 3px;
-    }
     .navul {
         gap: 3px;
     }
@@ -403,9 +401,9 @@ h2 {
     }
 }
 @media screen and (max-width:380px) {
+ 
     nav {
-        height: 5vh;       
-        padding: 0px;
+        height: 5vh;
     }
     li {
         font-size: .3rem;
