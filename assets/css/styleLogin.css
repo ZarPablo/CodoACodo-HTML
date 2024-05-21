@@ -10,8 +10,13 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-image: url(img/2.jpg);
+    background-image: url(../img/2147701348.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: "Poppins", sans-serif;
+    overflow: auto;
     flex-direction: column;
 }
 header {
@@ -178,7 +183,7 @@ span {
 
 .form input[type="submit"] {
   background-color: #85C1E9 ;
-  color: #fff;
+  color: #555;
   border-radius: 20px;
   border: none;
   padding: 10px 15px;
